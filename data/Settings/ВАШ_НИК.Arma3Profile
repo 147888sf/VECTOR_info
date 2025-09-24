@@ -1,6 +1,6 @@
-anisoFilter=16;
-textureQuality=4;
-shadowQuality=2;
+anisoFilter=8;
+textureQuality=2;
+shadowQuality=3;
 tripleHead=0;
 class DifficultyPresets
 {
@@ -32,30 +32,30 @@ class DifficultyPresets
 			multipleSaves=0;
 			tacticalPing=0;
 		};
-		aiLevelPreset="AILevelHigh";
+		aiLevelPreset="Custom";
 	};
 	class CustomAILevel
 	{
-		skillAI=0.5;
-		precisionAI=0.5;
+		skillAI=0.15000001;
+		precisionAI=0.050000001;
 	};
 };
 blood=1;
 adaptiveCrosshair=1;
-RTDEnabled=0;
+RTDEnabled=1;
 RTDFullHUD=1;
 RTDRoughLanding=1;
-RTDWindDynamic=0;
+RTDWindDynamic=1;
 RTDAutoTrim=1;
-RTDStressDamage=0;
+RTDStressDamage=1;
 showTitles=1;
 useImperialSystem=0;
 vehicleFreelook=0;
 useIncapacitatedState=1;
-tutorialHints=1;
+tutorialHints=0;
 streamFriendlyUI=0;
-instructorFigure=1;
-showRadio=1;
+instructorFigure=0;
+showRadio=0;
 wBrowserSP=0;
 class wBrowserMP
 {
@@ -411,8 +411,8 @@ keyCameraMoveUp[]={16};
 keyCameraMoveDown[]={44};
 keyCameraMoveTurbo1[]={42,54};
 keyCameraMoveTurbo2[]={56,184};
-keyCameraZoomIn[]={78};
-keyCameraZoomOut[]={74};
+keyCameraZoomIn[]={13};
+keyCameraZoomOut[]={12};
 keyCameraLookUp[]={72};
 keyCameraLookDown[]={80};
 keyCameraLookLeft[]={75};
@@ -521,14 +521,12 @@ class MainMap
 	class Compass
 	{
 		inBack=0;
-		position[]={0.11502367,-0.049877167,0.2};
+		position[]={-0.02350406,-0.027374836,0.2};
 		positionBack[]={0.005499999,2.2351743e-09,0.1};
 	};
 };
 singleVoice=0;
 difficulty="Custom";
-headBob=1;
-floatingZoneArea=0;
 bootCampWarning=1;
 browsingSource="LAN";
 class Filter
@@ -545,15 +543,51 @@ class Filter
 	battleyeRequired=0;
 	expansions=1;
 };
-lastMPMission="Trenya_okops";
+lastMPMission="TvT_VECTOR_villa_winter_pvp_basic";
 FavoriteServers[]={};
-mouseSensitivityX=1;
-mouseSensitivityY=1;
+activeKeys[]=
+{
+	"BIS___cur_mp.swu_public_novogorsk_map_done",
+	"BIS_%d0%90%d1%82%d0%b0%d0%ba%d0%b0%20%d0%bd%d0%b0%20%d1%80%d0%b0%d0%b4%d0%b0%d1%80%d0%bd%d1%83%d1%8e%20%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d1%8e.VTF_Lybor_done",
+	"BIS_TvT_uchastok_1x1.Bootcamp_ACR_done",
+	"BIS_TvT_ataka_PDSS_vs_CDF.drakovac_done",
+	"BIS_TvT_4x4_Specnaz_Shturmuet_CHDKZ.hellanmaa_done",
+	"BIS_TvT_Uchastok_V2.Bootcamp_ACR_done",
+	"BIS___cur_mp.juju_javory_done",
+	"BIS___cur_mp.drakovac_done",
+	"BIS_Showcase_AoW.Altis_titlecard",
+	"BIS_Showcase_AoW.Altis_establishingShot",
+	"BIS___cur_mp.zargabad_done",
+	"BIS_TvT_okopi.swu_public_novogorsk_map_done",
+	"BIS_TvT_VECTOR_Uchastok_V2.Bootcamp_ACR_done",
+	"BIS_%d0%90%d1%82%d0%b0%d0%ba%d0%b0%20%d0%bd%d0%b0%20%d1%80%d0%b0%d0%b4%d0%b0%d1%80%d0%bd%d1%83%d1%8e%20%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d1%8e%20VECTOR.VTF_Lybor_done",
+	"BIS_TvT_Vector_Finland_vs_VDV.vt7_done",
+	"BIS_TvT_Vector_rang_talib_airbase.juju_sahatra_done",
+	"BIS_TvEE_Vector_villa_winter_pvp_basic.go_map_fjord_done",
+	"BIS_TvT_Vector_villa_winter_pvp_basic.go_map_fjord_done",
+	"BIS_TvT_Vector_Finland_vs_VDV_3.hellanmaa_done",
+	"BIS_TvT_USA_vs_Takistan_airport.Farabad_done",
+	"BIS_TvT_VECTOR_Farjbad_compound.Farabad_done",
+	"BIS___cur_mp.go_map_fjord_done",
+	"BIS_TvT_Vector_Finland_vs_VDV_2.vt7_done"
+};
+currentCampaign="A3\Missions_F_Bootcamp\Campaign";
+lastSPMission="Art of War";
+playedKeys[]=
+{
+	"BIS_Showcase_AoW.Altis_done",
+	"BIS_Arsenal.Map_VR_done"
+};
+keyPLP_LTR_ladderSlideDown[]={316};
+teamSwitchOffsetX=0;
+teamSwitchOffsetY=0;
+headBob=1;
+floatingZoneArea=0;
 gamma=1;
 ppBrightness=1.01;
 ppContrast=1.0599999;
-ppSaturation=1.08;
-brightness=0.77956033;
+ppSaturation=1.0836582;
+brightness=1.0246582;
 fovTop=0.75;
 fovLeft=1.3333334;
 uiTopLeftX=0.29374999;
@@ -561,14 +595,16 @@ uiTopLeftY=0.22499999;
 uiBottomRightX=0.70625001;
 uiBottomRightY=0.77499998;
 IGUIScale=0.55000001;
-sceneComplexity=1300000;
-shadowZDistance=75;
-viewDistance=3000.0002;
-preferredObjectViewDistance=2500.0002;
-pipViewDistance=250;
-terrainGrid=6.25;
+mouseSensitivityX=0.30094004;
+mouseSensitivityY=0.30094004;
+sceneComplexity=900000;
+shadowZDistance=200;
+viewDistance=5999.998;
+preferredObjectViewDistance=3000.0002;
+pipViewDistance=500;
+terrainGrid=12.5;
 volumeCD=5;
-volumeFX=6.6998892;
+volumeFX=9.3912802;
 volumeSpeech=5;
 volumeVoN=10;
 vonRecThreshold=0.029999999;
